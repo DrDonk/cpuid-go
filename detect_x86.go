@@ -33,4 +33,5 @@ func addInfo(c *CPUInfo, safe bool) {
 	c.VendorID, c.VendorString = vendorID()
 	c.cacheSize()
 	c.frequencies()
+	c.HypervisorID, c.HypervisorString = hypervisorID(c)
 }

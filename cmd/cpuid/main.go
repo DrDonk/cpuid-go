@@ -59,6 +59,10 @@ func main() {
 	fmt.Println("Name:", cpuid.CPU.BrandName)
 	fmt.Println("Vendor String:", cpuid.CPU.VendorString)
 	fmt.Println("Vendor ID:", cpuid.CPU.VendorID)
+	if cpuid.CPU.Has(cpuid.HYPERVISOR) {
+		fmt.Println("Hypervisor String:", cpuid.CPU.HypervisorString)
+		fmt.Println("Hypervisor ID:", cpuid.CPU.HypervisorID)
+	}
 	fmt.Println("PhysicalCores:", cpuid.CPU.PhysicalCores)
 	fmt.Println("Threads Per Core:", cpuid.CPU.ThreadsPerCore)
 	fmt.Println("Logical Cores:", cpuid.CPU.LogicalCores)
