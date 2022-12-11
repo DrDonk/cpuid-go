@@ -14,11 +14,10 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
+	"github.com/drdonk/cpuid"
 	"log"
 	"os"
 	"strings"
-
-	"github.com/drdonk/cpuid/v2"
 )
 
 var js = flag.Bool("json", false, "Output as JSON")
