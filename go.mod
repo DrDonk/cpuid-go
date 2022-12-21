@@ -1,4 +1,4 @@
-module github.com/drdonk/cpuid
+module github.com/drdonk/cpuid-go
 
 go 1.15
 

@@ -14,7 +14,7 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
-	"github.com/drdonk/cpuid"
+	"github.com/drdonk/cpuid-go"
 	"log"
 	"os"
 	"strings"
